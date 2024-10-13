@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.link-feature:hover{
+    font-size: 110%;
+}
+
+.link-about:hover{
+    font-size: 110%;
+}
+
+.link-privacy:hover{
+    font-size: 110%;
+}
+
+main {
+    padding: 6rem 2rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;
+}
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.cta-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.feature {
+    flex-basis: calc(33.333% - 2rem);
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+@media (max-width: 768px) {
+    .feature {
+        flex-basis: 100%;
+    }
+}
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+p {
+    margin-bottom: 1rem;
+}
+ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Digital - Sua Saúde em Primeiro Lugar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">HealthCare Digital</a>
+            <div class="nav-links">
+                <a class="link-feature" href="#features">Recursos</a>
+                <a class="link-about" href="#about">Sobre</a>
+                <a class="link-privacy" href="privacy-policy.html">Política de Privacidade</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Sua Saúde em Primeiro Lugar</h1>
+            <p>Cuidados médicos personalizados e acessíveis, onde quer que você esteja.</p>
+            <a href="#" class="cta-button">Comece Agora</a>
+        </section>
+
+        <section id="features" class="features">
+            <div class="feature">
+                <h2>Consultas Online</h2>
+                <p>Acesse médicos especialistas de qualquer lugar, a qualquer hora.</p>
+            </div>
+            <div class="feature">
+                <h2>Prontuário Digital</h2>
+                <p>Mantenha seu histórico médico seguro e acessível.</p>
+            </div>
+            <div class="feature">
+                <h2>Monitoramento Remoto</h2>
+                <p>Acompanhamento contínuo da sua saúde com tecnologia de ponta.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Sobre a HealthCare Digital</h2>
+            <p>Somos uma plataforma inovadora de saúde digital, comprometida em fornecer cuidados médicos de alta qualidade e acessíveis a todos. Nossa missão é transformar a experiência de cuidados de saúde, tornando-a mais eficiente, personalizada e centrada no paciente.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HealthCare Digital. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
